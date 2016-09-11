@@ -1,3 +1,71 @@
-h1 {
-  color: salmon;
+
+html {
+ height:100%;
+}
+body{
+  background-color: #D3D3D3;
+  height:100%;
+}
+section {
+
+  display: flex;
+  flex-direction: row;
+  height:100%;
+  width:100%;
+
+
+}
+h2,h3{
+  text-align: center;
+}
+
+#center {
+  display: flex;
+  flex-direction:column;
+  flex-grow:3;
+  order:2;
+  align-items: center;
+  border: 1px solid red;
+}
+#left_side {
+  flex-grow:1;
+  order:1;
+  border: 1px solid red;
+}
+#right_side {
+  flex-grow:1;
+  order:3;
+  border: 1px solid red;
+}
+
+
+.pkg_deal {
+  display: flex;
+  flex-direction: column;
+  /*justify-content: space-around;;*/
+}
+.pkg_picks {
+    flex-direction: row;;
+}
+.pkg_more_info {
+  align-content: space-between;
+}
+#pkg1 {
+  background-image: url("../img/san-francisco.jpg");
+  flex-grow: 3;
+}
+#pkg2 {
+  background-image: url("../img/new-york.jpg");
+    flex-grow: 3;
+}
+#pkg3 {
+  background-image: url("../img/london.jpg");
+    flex-grow: 3;
+}
+
+.pkg_info {
+
+    text-align: center;
+    background-size: 400px;
+    justify-content: space-around;
 }
