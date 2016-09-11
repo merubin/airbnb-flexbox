@@ -5,15 +5,12 @@ html {
 body{
   background-color: #D3D3D3;
   height:100%;
+  width:100%;
 }
 section {
-
   display: flex;
   flex-direction: row;
   height:100%;
-  width:100%;
-
-
 }
 h2,h3{
   text-align: center;
@@ -24,7 +21,6 @@ h2,h3{
   flex-direction:column;
   flex-grow:3;
   order:2;
-  align-items: center;
   border: 1px solid red;
 }
 #left_side {
@@ -42,30 +38,45 @@ h2,h3{
 .pkg_deal {
   display: flex;
   flex-direction: column;
-  /*justify-content: space-around;;*/
+  border: 1px solid red;
 }
+.pkg_hdr {
+  width:100%;
+}
+
 .pkg_picks {
-    flex-direction: row;;
+    border: 1px solid red;
 }
-.pkg_more_info {
-  align-content: space-between;
+.img_box {
+  border: 5px solid green;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
+
 #pkg1 {
   background-image: url("../img/san-francisco.jpg");
-  flex-grow: 3;
 }
 #pkg2 {
   background-image: url("../img/new-york.jpg");
-    flex-grow: 3;
 }
 #pkg3 {
   background-image: url("../img/london.jpg");
-    flex-grow: 3;
+}
+#pkg4 {
+  background-image: url("../img/napa.jpg");
+}
+#pkg5 {
+  background-image: url("../img/sonoma.jpg");
+}
+#pkg6 {
+  background-image: url("../img/san-francisco-2.jpg");
 }
 
 .pkg_info {
-
-    text-align: center;
-    background-size: 400px;
-    justify-content: space-around;
+  max-width:500px;
+  text-align: center;
+  color:white;
+  font-size: 48px;
+  font-weight: bold;
+  padding-top:150px;
 }
